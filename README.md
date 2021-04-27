@@ -7,7 +7,7 @@ The script automates typing in [play.typeracer.com](https://play.typeracer.com) 
 ```bash
 pip install -r requirements.txt
 ```
-The script also uses the Tesseract-OCR binary, so install it from [here](https://github.com/UB-Mannheim/tesseract/wiki) and add it to PATH as well.
+The script also uses the Tesseract-OCR binary, install it from [here](https://github.com/UB-Mannheim/tesseract/wiki) and add it to PATH as well.
 
 ## How to use
 
