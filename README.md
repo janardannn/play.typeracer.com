@@ -20,4 +20,5 @@ Close the Snipping Tool window, the script will count down from 3 to 1, in the m
 ## Known Issues
 
 The scripts isn't able to identify "" in text and completely ignores them(quotes).
+
 Also, many a times it doesn't recognizes the first character in the text.
