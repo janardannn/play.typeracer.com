@@ -1,6 +1,6 @@
 # ABOUT
 
-The script automates typing in play.typeracer.com using image recognition through pytesseract module.
+The script automates typing in [play.typeracer.com](https://play.typeracer.com) using image recognition through pytesseract module.
 
 ## Installation
 
