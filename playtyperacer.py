@@ -15,6 +15,8 @@ def get_text():
     text = pytesseract.image_to_string('Resources/Capture.png')
     text = text[:-2]
     text = " ".join(text.split("\n"))
+    text = text.replace('|','I')
+
     ''' more refining of text '''
 
     test_text = text.split()
