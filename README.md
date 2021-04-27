@@ -15,7 +15,7 @@ The script also uses the Tesseract-OCR binary, so install it from [here](https:/
 python3 playtyperacer.py
 ```
 This will prompt the Snipping Tool window. Use the Snipping tool to precisely capture the text and then save it in the Resources/ folder and name the file "Capture.png" (windows default).
-Close the Snipping Tool windows, the script will count down from 3 to 1, in the mean time click the text field in the browser window.
+Close the Snipping Tool window, the script will count down from 3 to 1, in the mean time click the text field in the browser window.
 
 ## Known Issues
 
