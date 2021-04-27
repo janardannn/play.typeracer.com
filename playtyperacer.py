@@ -21,7 +21,7 @@ def get_text():
 
     test_text = text.split()
     for k in test_text:
-        if k == "{" or k=="}" or k=="|":
+        if k == "{" or k=="}" or k=="|" or k=="(" or k==")":
             test_text.remove(k)
     text = " ".join(test_text)
 
