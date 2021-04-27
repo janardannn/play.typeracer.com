@@ -54,12 +54,8 @@ def waiting_period():
         time.sleep(1.5)
         os.system('cls')
 
-def clean_up(key=0):
-    k = key
-    if k == 1:
-        os.remove('Resources/Capture.png') 
-    else:
-        pass
+def clean_up():
+    os.remove('Resources/Capture.png')
 
 def main(): 
 
@@ -70,5 +66,5 @@ def main():
         text = get_text()
         waiting_period()
         start_typing(text)
-        clean_up(1)
+        clean_up()
 main()
