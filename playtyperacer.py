@@ -15,9 +15,14 @@ def get_text():
     text = pytesseract.image_to_string('Resources/Capture.png')
     text = text[:-2]
     text = " ".join(text.split("\n"))
-    text = text.replace('|','I')
-
+    
     ''' more refining of text '''
+
+    if '|' in text:
+        text = text.replace('|','I')
+
+    elif '1' in text:
+        text = text.replace('1','I')
 
     test_text = text.split()
     for k in test_text:
