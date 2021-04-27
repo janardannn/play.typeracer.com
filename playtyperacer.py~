@@ -4,12 +4,11 @@ import os
 import time
 
 def get_text():
-    ''' Getting text from the image.
-        Now the thing is that there are \n 
-        in the text which we don't want and 
-        a weird character in the end of the 
-        text, so we will do some string 
-        manipulation as well.
+    ''' getting the text from the image
+        now the thing is that there are \n 
+        in the text which we do not need also 
+        a weird character in the text, so we
+        will do some string manipulation
     '''
     os.system('SnippingTool.exe')
     text = pytesseract.image_to_string('Resources/Capture.png')
@@ -27,19 +26,15 @@ def get_text():
     return text
 
 def start_typing(text):
-    ''' now we will use pyautogui
+    ''' now we will use the pyautogui
         module to type the text obtained
         from the image
     '''
-    ''' interval is necessary even if 
-        it is as low as 0.01, otherwise 
-        it will be too fast for the website
-        to consider as valid input
-    '''
+
     pyg.write(text,interval=0.0215)
 
 def waiting_period():
-    ''' now after capturing the
+    ''' now from after capturing the
         screenshot the program will 
         start typing it automatically which
         we don't want as the browser window
