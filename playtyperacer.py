@@ -25,9 +25,14 @@ def get_text():
         text = text.replace('1','I')
 
     test_text = text.split()
-    for k in test_text:
-        if k == "{" or k=="}" or k=="|" or k=="(" or k==")":
-            test_text.remove(k)
+    i = 0
+    while i<len(text):
+        
+        for k in test_text:
+            if k == "{" or k=="}" or k=="|" or k=="(" or k==")":
+                test_text.remove(k)
+        i+=1
+
     text = " ".join(test_text)
 
     ''' finally return the text '''
@@ -43,7 +48,7 @@ def start_typing(text):
         it will be too fast for the website
         to consider as valid input
     '''
-    pyg.write(text,interval=0.0215)
+    pyg.write(text,interval=0.0945)
 
 def waiting_period():
     ''' now after capturing the
