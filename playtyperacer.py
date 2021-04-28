@@ -25,14 +25,13 @@ def get_text():
         text = text.replace('1','I')
 
     test_text = text.split()
-    i = 0
-    while i<len(text):
+    
+    if "{" or "}" or "|" or "(" or ")" in test_text:
         
         for k in test_text:
             if k == "{" or k=="}" or k=="|" or k=="(" or k==")":
                 test_text.remove(k)
-        i+=1
-
+        
     text = " ".join(test_text)
 
     ''' finally return the text '''
